@@ -2,7 +2,7 @@
 <br>
 
 # AxioWetty
-[![GitHub issues](https://img.shields.io/github/issues/jjsayleraxio/AxioWetty?logo=github&style=flat)](https://github.com/jjsayleraxio/AxioWetty/issues)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/jjsayleraxio/AxioWetty?logo=github&style=flat)
 [![GitHub issues](https://img.shields.io/github/issues/jjsayleraxio/AxioWetty?logo=github&style=flat)](https://github.com/jjsayleraxio/AxioWetty/issues)
 ![Docker Build Status](https://img.shields.io/docker/build/jjsaxio/axio_wetty?logo=docker&style=flat)
 
