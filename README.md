@@ -1,4 +1,11 @@
+<img align="right" src="https://raw.githubusercontent.com/jjsayleraxio/AxioShiny/master/images/axio-logo.png">
+<br>
+
 # AxioWetty
+[![GitHub issues](https://img.shields.io/github/issues/jjsayleraxio/AxioWetty?logo=github&style=flat)](https://github.com/jjsayleraxio/AxioWetty/issues)
+[![GitHub issues](https://img.shields.io/github/issues/jjsayleraxio/AxioWetty?logo=github&style=flat)](https://github.com/jjsayleraxio/AxioWetty/issues)
+![Docker Build Status](https://img.shields.io/docker/build/jjsaxio/axio_wetty?logo=docker&style=flat)
+
 web terminal container used by Axio Research
 ## How To Use:
 Run the following line of code in a terminal:
