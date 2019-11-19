@@ -15,6 +15,10 @@ RUN rm -rf /etc/apt/sources.list \
 	&& add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/' \
 	&& curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
 	&& echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list \
+	&& curl http://archive.ubuntu.com/ubuntu/pool/main/i/icu/libicu60_60.2-3ubuntu3_amd64.deb --output /tmp/libicu60_60.2-3ubuntu3_amd64.deb \
+	&& curl http://archive.ubuntu.com/ubuntu/pool/main/r/readline/libreadline7_7.0-3_amd64.deb --output /tmp/libreadline7_7.0-3_amd64.deb \
+	&& dpkg -i /tmp/libicu60_60.2-3ubuntu3_amd64.deb \
+	&& dpkg -i /tmp/libreadline7_7.0-3_amd64.deb \
 	&& apt update \
 	&& apt install -y yarn r-base \
 	&& python3 -m pip install -U pip wheel \
