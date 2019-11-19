@@ -27,3 +27,4 @@ Code Breakdown:
 * https://linuxize.com/post/how-to-install-yarn-on-ubuntu-18-04/ (_install yarn on ubuntu_)
 * https://askubuntu.com/questions/872933/how-to-fix-hash-sum-mismatch-error-on-fresh-docker-image-update (_see last answer_)
 * https://community.plot.ly/t/running-dash-app-in-docker-container/16067/2 (_for running dash apps in container_)
+* https://docs.docker.com/config/containers/multi-service_container/ (_covers init process when running containers_)
