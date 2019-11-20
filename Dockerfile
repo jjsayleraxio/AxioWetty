@@ -34,7 +34,7 @@ RUN rm -rf /etc/apt/sources.list \
 
 WORKDIR /wetty
 
-EXPOSE 3000, 8050, 10000-10500
+EXPOSE 3000 8050 10000-10500
 
 ENTRYPOINT ["node"]
 CMD ["index.js", "--base", "/", "--command", "login", "--title", "AxioWeTTY"]
