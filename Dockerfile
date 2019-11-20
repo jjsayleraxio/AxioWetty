@@ -2,7 +2,10 @@ FROM ubuntu:18.04
 
 LABEL maintainer="Joseph Sayler <josephs@axioresearch.com>" version="1.2"
 
+ARG DEBIAN_FRONTEND=noninteractive
+
 RUN rm -rf /etc/apt/sources.list \
+	&& ln -fs /usr/share/zoneinfo/America/Los_Angeles /etc/localtime
 	&& echo "deb mirror://mirrors.ubuntu.com/mirrors.txt disco main restricted universe multiverse" >> /etc/apt/sources.list \
 	&& echo "deb mirror://mirrors.ubuntu.com/mirrors.txt disco-updates main restricted universe multiverse" >> /etc/apt/sources.list \
 	&& echo "deb-src mirror://mirrors.ubuntu.com/mirrors.txt disco-updates main restricted universe multiverse" >> /etc/apt/sources.list \
@@ -22,7 +25,7 @@ RUN rm -rf /etc/apt/sources.list \
 	&& apt update \
 	&& apt install -y yarn r-base \
 	&& python3 -m pip install -U pip wheel \
-	&& pip3 install dash pandas virtualenvwrapper \
+	&& pip3 install virtualenvwrapper \
 	&& git clone https://github.com/krishnasrinivas/wetty.git \
 	&& cd wetty \
 	&& yarn \
