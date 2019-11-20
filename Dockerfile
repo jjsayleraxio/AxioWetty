@@ -5,7 +5,7 @@ LABEL maintainer="Joseph Sayler <josephs@axioresearch.com>" version="1.2"
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN rm -rf /etc/apt/sources.list \
-	&& ln -fs /usr/share/zoneinfo/America/Los_Angeles /etc/localtime
+	&& ln -fs /usr/share/zoneinfo/America/Los_Angeles /etc/localtime \
 	&& echo "deb mirror://mirrors.ubuntu.com/mirrors.txt disco main restricted universe multiverse" >> /etc/apt/sources.list \
 	&& echo "deb mirror://mirrors.ubuntu.com/mirrors.txt disco-updates main restricted universe multiverse" >> /etc/apt/sources.list \
 	&& echo "deb-src mirror://mirrors.ubuntu.com/mirrors.txt disco-updates main restricted universe multiverse" >> /etc/apt/sources.list \
