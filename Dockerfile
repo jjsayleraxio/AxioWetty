@@ -23,7 +23,7 @@ RUN rm -rf /etc/apt/sources.list \
 	&& dpkg -i /tmp/libicu60_60.2-3ubuntu3_amd64.deb \
 	&& dpkg -i /tmp/libreadline7_7.0-3_amd64.deb \
 	&& apt update \
-	&& apt install -y yarn r-base \
+	&& apt install -y yarn r-base r-base-dev \
 	&& python3 -m pip install -U pip wheel \
 	&& pip3 install virtualenvwrapper \
 	&& git clone https://github.com/krishnasrinivas/wetty.git \
