@@ -34,6 +34,8 @@ RUN rm -rf /etc/apt/sources.list \
 
 WORKDIR /wetty
 
+RUN curl https://raw.githubusercontent.com/jjsayleraxio/AxioWetty/dev/scripts/add_user.sh > add_user.sh && sh ./add_user.sh
+
 EXPOSE 3000 8050 10000-10500
 
 ENTRYPOINT ["node"]
